@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="@dimen/standard_dimens"
     android:background="@color/white"
+    android:paddingHorizontal="@dimen/standard_dimens"
     tools:context=".MainActivity">
 
     <ImageView
@@ -46,6 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/username"
+        android:textColorHint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_sing_to">
 
@@ -53,7 +54,8 @@
             android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -63,15 +65,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
-        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/it_username">
+        app:layout_constraintTop_toBottomOf="@+id/it_username"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -80,10 +85,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/standard_dimens"
         android:gravity="end"
-        android:textColor="@color/black"
-        android:textAllCaps="true"
         android:paddingEnd="@dimen/large_dimens"
         android:text="@string/forgot_password"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ti_password"
         tools:ignore="RtlSymmetry" />
@@ -92,18 +97,18 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_dimens"
         android:backgroundTint="@color/black"
         android:text="@string/go"
         android:textAllCaps="true"
-        android:layout_marginTop="@dimen/standard_dimens"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_forgot" />
 
     <TextView
-android:layout_marginBottom="@dimen/large_size_for_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/standard_dimens"
+        android:layout_marginBottom="@dimen/large_size_for_image"
         android:gravity="center"
         android:text="@string/new_user"
         android:textAllCaps="true"
