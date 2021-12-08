@@ -8,13 +8,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        imageView = findViewById(R.id.iv_image);
+        ImageView imageView = findViewById(R.id.iv_image);
         // инициализируем изображение
 
 
