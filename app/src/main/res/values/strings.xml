@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">HW.A1.L1</string>
+    <string name="hello_title">Hello there, \nwelcome back</string>
+    <string name="sing_in">Sing in to continue</string>
+    <string name="todo">TODO</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">forgot password</string>
+    <string name="go">go</string>
+    <string name="new_user">new user? sing up</string>
 </resources>

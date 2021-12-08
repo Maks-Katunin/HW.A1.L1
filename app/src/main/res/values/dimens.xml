@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="standart_dimens">16dp</dimen>
+    <dimen name="standard_dimens">16dp</dimen>
     <dimen name="large_dimens">32dp</dimen>
     <dimen name="size_for_image">50dp</dimen>
     <dimen name="large_size_for_image">100dp</dimen>
