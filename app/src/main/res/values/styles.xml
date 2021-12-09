@@ -4,6 +4,5 @@
     <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:paddingBottom">8dp</item>
         <item name="boxStrokeColor">@color/black</item>
-
     </style>
 </resources>
