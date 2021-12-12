@@ -5,4 +5,5 @@
     <dimen name="size_for_image">50dp</dimen>
     <dimen name="large_size_for_image">100dp</dimen>
     <dimen name="very_large_size_for_image">150dp</dimen>
+    <dimen name="dimens_for_text">16sp</dimen>
 </resources>

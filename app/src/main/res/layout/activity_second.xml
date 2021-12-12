@@ -5,16 +5,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:paddingHorizontal="@dimen/large_dimens"
     tools:context=".Second_Activity">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_avatar"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="@dimen/very_large_size_for_image"
+        android:layout_height="@dimen/very_large_size_for_image"
         android:layout_marginTop="@dimen/standard_dimens"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/alba" />
+
+    <TextView
+        android:id="@+id/tv_edit_photo"
+        style="@style/StyleForEditPhoto"
+        android:text="@string/edit_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_avatar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/standard_dimens"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edit_photo">
+
+        <EditText
+            style="@style/StylesForLinearLayout"
+            android:hint="@string/enter_your_name"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords" />
+
+        <EditText
+            style="@style/StylesForLinearLayout"
+            android:hint="@string/enter_your_last_name"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords" />
+
+        <View style="@style/StyleForEmptyView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/private_information"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/dimens_for_text"
+            android:textStyle="bold" />
+
+        <View style="@style/StyleForEmptyView" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Jessica_Smith"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/dimens_for_text"
+            app:drawableStartCompat="@drawable/ic_email" />
+
+        <View style="@style/StyleForBlackView" />
+
+
+        <EditText
+            style="@style/StylesForLinearLayout"
+            android:autofillHints="phone"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="@string/enter_phone_number"
+            android:inputType="phone" />
+
+        <View style="@style/StyleForEmptyView" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_lock" />
+
+        <View style="@style/StyleForBlackView" />
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

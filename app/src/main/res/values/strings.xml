@@ -8,4 +8,10 @@
     <string name="forgot_password">forgot password</string>
     <string name="go">go</string>
     <string name="new_user">new user? sing up</string>
+    <string name="edit_photo">Edit Photo</string>
+    <string name="private_information">Private Information</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="Jessica_Smith">jessicasmith@gmail.com</string>
+    <string name="enter_phone_number">Enter phone number</string>
 </resources>
